@@ -8,10 +8,14 @@
 	<div class="col-md-3">
 	<p>Description: <%= @product.description %></p>
 	<p>Color: <%= @product.color %></p>
+	<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
 	</div>
 </div>
 
 <br>
+
+<%= render 'products/new_comment' %>
+<%= render 'products/comments' %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
