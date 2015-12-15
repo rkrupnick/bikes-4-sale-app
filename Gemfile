@@ -12,6 +12,7 @@ gem 'cancancan'
 gem 'will_paginate'
 gem 'factory_girl_rails', "~> 4.0"
 gem 'guard-rspec', require: false
+gem 'stripe'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
