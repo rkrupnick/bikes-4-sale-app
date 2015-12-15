@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :create, :destroy]
 
   post 'static_pages/thank_you'
+  post 'payments/create'
   # Example resource route with options:
   #   resources :products do
   #     member do
