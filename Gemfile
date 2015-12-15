@@ -11,6 +11,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'will_paginate'
 gem 'factory_girl_rails', "~> 4.0"
+gem 'guard-rspec', require: false
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -22,7 +23,8 @@ end
 
 group :development do
   gem 'web-console', '~> 2.0'
-
+  gem 'guard'
+  gem 'guard-spork'
   gem 'spring'
 end
 
