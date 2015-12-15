@@ -4,7 +4,8 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-3"><%= image_tag(@product.image_url, :class => "img-responsive") %></div>
+	<div class="col-md-4">
+		<%= image_tag(@product.image_url, :class => 'img-zoom img-responsive', data_zoom_image: @product.image_url) %></div>
 	<div class="col-md-3">
 	<p>Description: <%= @product.description %></p>
 	<p>Color: <%= @product.color %></p>
@@ -22,6 +23,6 @@
 
 <br>
 
-<%= render 'products/new_comment' %>
-<%= render 'products/comments' %>
+<%= render 'new_comment' %>
+<%= render 'comments' %>
 
