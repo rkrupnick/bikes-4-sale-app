@@ -9,13 +9,15 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'cancancan'
-gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate'
+gem 'factory_girl_rails', "~> 4.0"
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
