@@ -1,4 +1,4 @@
-<div class="jumbotron">  
+<div class="jumbotron landing-page">  
   <h1>Welcome to Jersey Shore Bikes</h1>
   <h2>The best place to buy used bikes in New Jersey</h2>
 </div>
@@ -15,7 +15,7 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
 	    <div class="item<%= " active" if product == @products.first %>">
-	    	<%= image_tag(product.image_url) %>
+	    	<%= image_tag(product.image_url, :class => "img-responsive") %>
       	<div class="carousel-caption">
         	<%= product.name %>
       	</div>
