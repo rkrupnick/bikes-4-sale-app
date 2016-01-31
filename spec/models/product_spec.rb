@@ -25,4 +25,14 @@ describe Product do
 			expect(@product).not_to be_valid
 		end
 	end
+
+	context "when the product has a name but no description" do
+		before do
+			@product = build(:product, description: "")
+		end
+
+		it "is invalid" do
+			expect(@product).not_to be_valid
+		end
+	end
 end

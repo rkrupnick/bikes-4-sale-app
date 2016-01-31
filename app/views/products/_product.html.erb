@@ -1,9 +1,14 @@
 <div class="row">
-    <div class="col-md-3 col-xs-3"><%= image_tag(product.image_url, :class => 'img-thumbnail') %></div>
-    <div class="col-md-3 col-xs-3"><%= product.name %></div>
-    <div class="col-md-3 col-xs-3"><%= product.description %></div>
-    <div class="col-md-3 col-xs-3"><%= product.color %></div>
+    <div class="col-md-3 col-xs-3">
+    <h3>$<%= product.price/100 %>
+    <%= product.name %></h3>
+    <%= image_tag(product.image_url, :class => 'img-thumbnail') %></div>
+    
+    <div class="col-md-3 col-xs-3 description">
+    <%= product.description %><br>
+    Color: <%= product.color %></div>
   </div>
+
   <div class="row">
     <div class="col-md-3 col-xs-3"><%= link_to 'Show', product %>
       <%= link_to 'Edit', edit_product_path(product) %>

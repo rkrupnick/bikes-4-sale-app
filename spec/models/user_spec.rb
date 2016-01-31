@@ -10,4 +10,5 @@ describe User do
 		user = build(:user, email: "not_an_email")
 		expect(user).to_not be_valid
 	end
+
 end
