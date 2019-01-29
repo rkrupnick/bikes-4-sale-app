@@ -1,6 +1,6 @@
 # This is a Ruby on Rails based ecommerce application.
 
-This application was built as part of the CareerFoundry Web Development Program.
+This application was built as part of the CareerFoundry Web Development Program. It uses Ruby on Rails for the backend and AngularJS for the front end.
 
 To view a live version of this site, please [click here](https://njbikes.herokuapp.com).
 
